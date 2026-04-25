@@ -8,7 +8,6 @@ A modern rewrite of the original **2012 DR301 app by Zeon** for their
 After the official app was discontinued, compatibility with modern devices was lost
 rendering many K9 units non-functional.
 
-This project restores control.  
 This project brings K9 back online.
 
 ---
