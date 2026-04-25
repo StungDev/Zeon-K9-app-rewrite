@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/Background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/background_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contentArea"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#99002030"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="15:10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/voice_title"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fontFamily="@font/komu_a_regular"
+                android:gravity="center"
+                android:text="@string/voice_commands"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal"
+                app:autoSizeMaxTextSize="1000dp"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.6" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/grid_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/footer"
+            app:layout_constraintTop_toBottomOf="@+id/header">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/voice1"
+                    style="@style/VoiceCommandButton"
+                    android:layout_weight="1"
+                    android:text="@string/voice_affirmative" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/voice2"
+                    style="@style/VoiceCommandButton"
+                    android:layout_weight="1"
+                    android:capitalize="none"
+                    android:text="I am K-9" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/voice3"
+                    style="@style/VoiceCommandButton"
+                    android:layout_weight="1"
+                    android:text="@string/voice_negative" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/voice4"
+                    style="@style/VoiceCommandButton"
+                    android:layout_weight="1"
+                    android:text="@string/voice_offensive" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/voice5"
+                    style="@style/VoiceCommandButton"
+                    android:layout_weight="1"
+                    android:text="@string/voice_stimulating" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/voice6"
+                    style="@style/VoiceCommandButton"
+                    android:layout_weight="1"
+                    android:text="@string/voice_variables" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/voice7"
+                    style="@style/VoiceCommandButton"
+                    android:layout_weight="1"
+                    android:text="@string/voice_warning" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/voice8"
+                    style="@style/VoiceCommandButton"
+                    android:layout_weight="1"
+                    android:text="@string/voice_friend" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/backToStart"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/rounded_button_bg"
+                android:fontFamily="@font/komu_a_regular"
+                android:lines="1"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/back_to_options"
+                android:textColor="@color/rounded_button_text"
+                android:textStyle="normal"
+                app:autoSizeMaxTextSize="1000dp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeTextType="uniform"
+                app:cornerRadius="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintWidth_percent="0.6"
+                app:strokeColor="#BEBFC3"
+                app:strokeWidth="4dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/k9_small"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="40dp"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/k9_main"
+            app:layout_constraintBottom_toTopOf="@+id/grid_container"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintHorizontal_bias="0.87"
+            app:layout_constraintStart_toEndOf="@+id/header"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.29000002" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

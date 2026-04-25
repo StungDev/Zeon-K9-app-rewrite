@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">K9Rewrite</string>
+    <string name="interactive">INTERACTIVE</string>
+    <string name="k9">K-9</string>
+    <string name="start">START</string>
+    <string name="fire">FIRE!</string>
+    <string name="voices">VOICES</string>
+    <string name="back_to_options">Back to options</string>
+    <string name="voice_commands">VOICE COMMANDS</string>
+    <string name="voice_affirmative">Affirmative\nMaster</string>
+    <string name="voice_iamk9">I am\nK-9</string>
+    <string name="voice_negative">Negative!</string>
+    <string name="voice_offensive">Offensive\nCapability!</string>
+    <string name="voice_stimulating">Stimulating\nConversation</string>
+    <string name="voice_variables">Too many\nVariables!</string>
+    <string name="voice_warning">Warning\nYou!</string>
+    <string name="voice_friend">Friend</string>
+</resources>
