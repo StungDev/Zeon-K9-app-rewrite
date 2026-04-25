@@ -1,13 +1,13 @@
-package com.example.k9rewrite
+package com.stungdev.k9rewrite
 
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.ComponentActivity
-import com.example.k9rewrite.audio.ConstantClickScheduler
-import com.example.k9rewrite.audio.SoundBank
-import com.example.k9rewrite.audio.SoundController
-import com.example.k9rewrite.config.SoundConfig
+import com.stungdev.k9rewrite.audio.ConstantClickScheduler
+import com.stungdev.k9rewrite.audio.SoundBank
+import com.stungdev.k9rewrite.audio.SoundController
+import com.stungdev.k9rewrite.config.SoundConfig
 
 class VoicesActivity : ComponentActivity() {
     private lateinit var bank: SoundBank

@@ -1,4 +1,4 @@
-package com.example.k9rewrite.ui.theme
+package com.stungdev.k9rewrite.ui.theme
 
 import android.app.Activity
 import android.os.Build

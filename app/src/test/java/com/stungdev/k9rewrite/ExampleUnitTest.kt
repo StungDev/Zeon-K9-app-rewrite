@@ -1,4 +1,4 @@
-package com.example.k9rewrite
+package com.stungdev.k9rewrite
 
 import org.junit.Test
 

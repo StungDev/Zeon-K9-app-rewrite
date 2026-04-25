@@ -1,8 +1,8 @@
-package com.example.k9rewrite.audio
+package com.stungdev.k9rewrite.audio
 
 import android.os.Handler
 import android.os.Looper
-import com.example.k9rewrite.config.SoundConfig
+import com.stungdev.k9rewrite.config.SoundConfig
 
 class ConstantClickScheduler(
     private val bank: SoundBank,

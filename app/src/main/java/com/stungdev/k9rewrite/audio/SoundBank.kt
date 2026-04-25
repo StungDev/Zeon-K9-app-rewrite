@@ -1,4 +1,4 @@
-package com.example.k9rewrite.audio
+package com.stungdev.k9rewrite.audio
 
 import android.content.Context
 import android.media.AudioAttributes

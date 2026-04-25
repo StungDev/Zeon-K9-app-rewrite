@@ -1,10 +1,10 @@
-package com.example.k9rewrite.config
+package com.stungdev.k9rewrite.config
 
 object SoundConfig {
     const val LEFT_OFF = 0f
-    const val LEFT_ON = 2f
+    const val LEFT_ON = 1f
     const val RIGHT_OFF = 0f
-    const val RIGHT_ON = 2f
+    const val RIGHT_ON = 1f
 
     const val CONSTANT_CLICK = "Constant_click.wav"
     const val CONSTANT_CLICK_INTERVAL_MS = 1_000L

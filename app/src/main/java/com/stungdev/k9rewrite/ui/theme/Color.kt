@@ -1,4 +1,4 @@
-package com.example.k9rewrite.ui.theme
+package com.stungdev.k9rewrite.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

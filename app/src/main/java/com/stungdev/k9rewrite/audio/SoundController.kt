@@ -1,6 +1,6 @@
-package com.example.k9rewrite.audio
+package com.stungdev.k9rewrite.audio
 
-import com.example.k9rewrite.config.SoundConfig
+import com.stungdev.k9rewrite.config.SoundConfig
 
 class SoundController(
     private val bank: SoundBank,

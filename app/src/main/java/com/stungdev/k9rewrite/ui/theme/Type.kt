@@ -1,4 +1,4 @@
-package com.example.k9rewrite.ui.theme
+package com.stungdev.k9rewrite.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
